@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 
 from webdriver_manager.chrome import ChromeDriverManager
-
+from selenium.webdriver.chrome.service import Service
 
 #Get bot selenium make sure you can access google chrome
 
@@ -105,4 +105,3 @@ df['จำนวนที่ขายไปแล้ว'] = sell_total_lis
 df.to_excel("{}.xlsx".format(file_name))
 
 driver.close()
-
